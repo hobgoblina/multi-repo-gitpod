@@ -4,7 +4,7 @@ Step 1. Declare repos in `repos.yml`
 
 ```
 repos:
-  - name: bookchin              # Used as the directory's name
+  - name: bookchin              # Used to name the directory that the repo is cloned into
     url: https://github.com/you-should/google-bookchin
     branch: gitpod-test-branch
 ```
