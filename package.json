@@ -8,7 +8,7 @@
   "homepage": "https://github.com/necropolina/multi-repo-gitpod#readme",
 
   "scripts": {
-    "repos:init": "./scripts/init-repos.js"
+    "clone-repos": "./scripts/clone-repos.js"
   },
 
   "dependencies": {

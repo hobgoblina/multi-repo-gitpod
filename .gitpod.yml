@@ -2,7 +2,7 @@ tasks:
   - name: Init
     init: |
       npm install
-      npm run repos:init
+      npm run clone-repos
       gp sync-done init
     command: |
       code -add /workspace/*
