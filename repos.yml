@@ -1,0 +1,10 @@
+repos:
+  - name: foo
+    url: https://github.com/necropolina/f00
+    branch: main
+  - name: some-api
+    url: https://github.com/necropolina/some
+    branch: main
+  - name: third-one
+    url: https://github.com/Fastlane-LLC/third-one
+    branch: feature-branch

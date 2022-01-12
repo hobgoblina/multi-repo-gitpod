@@ -1,0 +1,28 @@
+{
+  "name": "multi-repo-gitpod",
+  "version": "1.0.0",
+  "description": "example gitpod meta-repo pattern",
+  "main": "index.js",
+  "author": "Lina",
+  "license": "ISC",
+  "homepage": "https://github.com/necropolina/multi-repo-gitpod#readme",
+
+  "scripts": {
+    "repos:init": "./scripts/init-repos.js"
+  },
+
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "git-clone": "^0.2.0",
+    "yaml": "^1.10.2"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necropolina/multi-repo-gitpod.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/necropolina/multi-repo-gitpod/issues"
+  }
+}

@@ -1,0 +1,7 @@
+tasks:
+  - name: Init
+    init: |
+      npm run repos:init
+      code -add /workspace/*
+      gp sync-done init
+    command: exit
