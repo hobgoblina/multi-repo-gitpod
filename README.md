@@ -1,4 +1,3 @@
-# multi-repo-gitpod
 Example gitpod meta-repo pattern using the default gitpod container, because git modules suck
 
 Step 1. Declare repos in `repos.yml`
