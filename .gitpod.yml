@@ -10,6 +10,7 @@ tasks:
 
   - name: foo
     init: |
+      gp sync-await init
       cd /workspace/foo
       echo 'cd into the repo's directory and then run init commands'
     command: |
@@ -18,6 +19,7 @@ tasks:
 
   - name: some
     init: |
+      gp sync-await init
       cd /workspace/some-api
       echo 'cd into the repo's directory and then run init commands'
     command: |
