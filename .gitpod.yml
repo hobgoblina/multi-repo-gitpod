@@ -5,3 +5,19 @@ tasks:
       code -add /workspace/*
       gp sync-done init
     command: exit
+
+  - name: foo
+    init: |
+      cd /workspace/foo
+      echo 'cd into the repo's directory and then run init commands'
+    command: |
+      cd /workspace/foo
+      echo 'cd into the repo's directory and then run init commands'
+
+  - name: some
+    init: |
+      cd /workspace/some-api
+      echo 'cd into the repo's directory and then run init commands'
+    command: |
+      cd /workspace/some-api
+      echo 'cd into the repo's directory and then run init commands'
