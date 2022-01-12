@@ -4,7 +4,7 @@ Step 1. Declare repos in `repos.yml`
 
 ```
 repos:
-  - name: google-bookchin
+  - name: bookchin              # Used as the directory's name
     url: https://github.com/you-should/google-bookchin
     branch: gitpod-test-branch
 ```
@@ -24,9 +24,9 @@ tasks:
 
 Step 3. Run tasks for the cloned repos
 ```
-- name: foo
-    init: |
-      gp sync-await init        # Wait for the repos to get cloned
-      cd /workspace/foo         # cd to the repo's directory
-      # do other stuff
+- name: google bookchin
+  init: |
+    gp sync-await init          # Wait for the repos to get cloned
+    cd /workspace/bookchin      # cd to the repo's directory
+    # do other stuff
 ```
