@@ -3,6 +3,8 @@ tasks:
     init: |
       npm install
       npm run clone-repos
+      #### Runs 'git pull' for all of the cloned repos to set them to the latest commit ####
+      find .. -type d -maxdepth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull \;
       gp sync-done init
     command: |
       code -add /workspace/*
