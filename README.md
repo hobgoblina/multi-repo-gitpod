@@ -1,6 +1,6 @@
 Example gitpod meta-repo pattern using the default gitpod container, because git modules suck
 
-Step 1. Declare repos in `repos.yml`
+**Step 1.** Declare repos in `repos.yml`
 
 ```
 childRepositories:
@@ -9,7 +9,7 @@ childRepositories:
     branch: gitpod-test-branch
 ```
 
-Step 2. Do a thing like...
+**Step 2.** Do a thing like...
 
 ```
 tasks:
@@ -22,7 +22,7 @@ tasks:
       code -add /workspace/*    # Add the repos to the vscode workspace
 ```
 
-Step 3. Run tasks for the cloned repos
+**Step 3.** Run tasks for the cloned repos
 ```
 - name: google bookchin
   init: |
@@ -31,4 +31,4 @@ Step 3. Run tasks for the cloned repos
     # do other stuff
 ```
 
-Step 4. Use `parentRepositories` and `childRepositories` to establish bi-directional references between repos, and use a script like `/scripts/trigger-parent-builds.js` to trigger prebuilds in parent repos when commits happen in children.
+**Step 4.** Use `parentRepositories` and `childRepositories` to establish bi-directional references between repos, and use a script like `/scripts/trigger-parent-builds.js` to trigger prebuilds in parent repos when commits happen in children.
