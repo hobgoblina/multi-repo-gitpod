@@ -3,7 +3,7 @@ Example gitpod meta-repo pattern using the default gitpod container, because git
 Step 1. Declare repos in `repos.yml`
 
 ```
-repos:
+childRepositories:
   - name: bookchin              # Used to name the directory that the repo is cloned into
     url: https://github.com/you-should/google-bookchin
     branch: gitpod-test-branch
@@ -30,3 +30,5 @@ Step 3. Run tasks for the cloned repos
     cd /workspace/bookchin      # cd to the repo's directory
     # do other stuff
 ```
+
+Step 4. Use `parentRepositories` and `childRepositories` to establish bi-directional references between repos, and use a script like `/scripts/trigger-parent-builds.js` to trigger prebuilds in parent repos when commits happen in children.
