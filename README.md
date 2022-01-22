@@ -9,7 +9,7 @@ childRepositories:
     branch: gitpod-test-branch
 ```
 
-**Step 2.** Do a thing like...
+**Step 2.** In `.gitpod.yml`, do a thing like...
 
 ```
 tasks:
