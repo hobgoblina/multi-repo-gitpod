@@ -31,4 +31,4 @@ tasks:
     # do other stuff
 ```
 
-**Step 4.** Use `parentRepositories` and `childRepositories` to establish bi-directional references between repos, and use a script like `/scripts/trigger-parent-builds.js` to trigger prebuilds in parent repos when commits happen in children.
+**Step 4.** Use `parentRepositories` and `childRepositories` to establish bi-directional references between repos, and use a script like `/scripts/trigger-parent-builds.js` along with Github webhooks to trigger prebuilds in parent repos when commits happen in children.
